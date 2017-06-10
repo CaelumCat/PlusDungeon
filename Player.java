@@ -4,9 +4,13 @@
  * and open the template in the editor.
  */
 package plusdungeon;
+
 import java.util.ArrayList;
+
+
 /**
  *
+ * @author Leah
  * @author Christine
  */
 public abstract class Player {
@@ -15,17 +19,17 @@ public abstract class Player {
     int mana;
     int maxMana;
     Weapon weapon;
-    ArrayList<Weapon> weapons;
+    ArrayList<Weapon> weapons = new ArrayList();
     Armor armor;
     ArrayList<Armor> armors;
     Potion potion;
     ArrayList<Potion> potions;
     
-    Player(int hp, int mana, Weapon weapon, Armor armor, Potion potion) {
-        this.hp = hp;
-        maxHP = hp;
-        this.mana = mana;
-        maxMana = mana;
+    Player(int maxHP, int maxMana, Weapon weapon, Armor armor, Potion potion) {
+        this.hp = maxHP;
+        this.maxHP = maxHP;
+        this.mana = maxMana;
+        this.maxMana = maxMana;
         this.weapon = weapon;
         weapons.add(weapon);
         this.armor = armor;
@@ -106,6 +110,16 @@ public abstract class Player {
     
     public void setPotion(int newPotion) {
         potion = potions.get(newPotion);
+    }
+    
+    public void usePotion() {
+        ArrayList<Integer> effects = potion.useEffects();
+        hp += effects.get(0);
+        maxHP += effects.get(1);
+        mana += effects.get(2);
+        maxMana += effects.get(3);
+        //do something to increase Player's attack by effects.get(4)
+        //do something to increase Player's defense by effects.get(5)
     }
     
 }
