@@ -4,13 +4,10 @@
  * and open the template in the editor.
  */
 package plusdungeon;
-
 import java.util.ArrayList;
-
-
 /**
  *
- * @author leahr
+ * @author Christine
  */
 public abstract class Player {
     int hp;
