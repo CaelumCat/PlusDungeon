@@ -7,9 +7,10 @@ package plusdungeon;
 
 /**
  *
- * @author leahr
+ * @author Leah
+ * @autho Christine
  */
-public class Weapon {
+public abstract class Weapon {
     int force; //damage from impact. staff, tackle
     int pierce; //damage from stabbing or piercing. sword, gun
     int slash; //damage from slashing. sword, claw
