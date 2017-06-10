@@ -9,7 +9,8 @@ import java.util.ArrayList;
 
 /**
  *
- * @author leahr
+ * @author Leah
+ * @author Christine
  */
 public abstract class Potion {
     ArrayList<Integer> effects = new ArrayList();
