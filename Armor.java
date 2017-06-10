@@ -7,7 +7,8 @@ package plusdungeon;
 
 /**
  *
- * @author leahr
+ * @author Leah
+ * @author Christine
  */
 public abstract class Armor {
     int force; //damage from impact. staff, tackle
