@@ -8,7 +8,7 @@ package plusdungeon;
 /**
  *
  * @author Leah
- * @autho Christine
+ * @author Christine
  */
 public abstract class Weapon {
     int force; //damage from impact. staff, tackle
@@ -16,6 +16,7 @@ public abstract class Weapon {
     int slash; //damage from slashing. sword, claw
     int magic; //damage by magic. staff, wand
     //image
+    //player position
     
     public Weapon(int f, int p, int s, int m) {
         force = f;
@@ -23,4 +24,21 @@ public abstract class Weapon {
         slash = s;
         magic = m;
     }
+    
+    public int getForce() {
+        return force;
+    }
+    
+    public int getPierce() {
+        return pierce;
+    }
+    
+    public int getSlash() {
+        return slash;
+    }
+    
+    public int getMagic() {
+        return magic;
+    }
+    
 }
