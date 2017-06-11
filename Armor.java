@@ -25,4 +25,20 @@ public abstract class Armor {
         magic = m;
     }
     
+    public int getForce() {
+        return force;
+    }
+    
+    public int getPierce() {
+        return pierce;
+    }
+    
+    public int getSlash() {
+        return slash;
+    }
+    
+    public int getMagic() {
+        return magic;
+    }
+    
 }
